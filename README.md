@@ -1,199 +1,141 @@
-# PHP-8-Symfony-AI-Upskilling
-
-# 🧭 90-Day Upskilling Roadmap  
-**Goal:** Re-enter the software industry as a strong Symfony 7 / PHP 8 backend engineer while building applied AI integration skills.  
+# 🧭 90-Day Upskilling Roadmap
+**Backend → AI Transition | PHP 8 · Symfony 7 · Docker · LangChain**  
 **Author:** Martin Baker  
-**Duration:** 12 Weeks (~90 Days)  
-**Commitment:** ~10–15 hours/week  
+
+![Status](https://img.shields.io/badge/Status-In%20Progress-blueviolet?style=flat-square)
+![PHP](https://img.shields.io/badge/PHP-8.3-blue?style=flat-square&logo=php)
+![Symfony](https://img.shields.io/badge/Symfony-7.1-black?style=flat-square&logo=symfony)
+![Python](https://img.shields.io/badge/Python-3.12-yellow?style=flat-square&logo=python)
+![LangChain](https://img.shields.io/badge/AI-LangChain-green?style=flat-square)
 
 ---
 
-## ✅ Overview
+## 🧾 Overview
+
 | Phase | Duration | Focus |
-|-------|-----------|-------|
-| 1️⃣ Re-Entry & Refresh | Weeks 1 – 4 | PHP 8 · Symfony 7 · API Platform |
-| 2️⃣ Production & AI Foundations | Weeks 5 – 8 | Docker · CI/CD · Python · LangChain |
-| 3️⃣ Integration & Portfolio | Weeks 9 – 12 | Symfony↔AI Bridge · Portfolio · Job Prep |
+|-------|-----------|--------|
+| 1️⃣ Re-Entry & Refresh | Weeks 1–4 | PHP 8 · Symfony 7 · API Platform |
+| 2️⃣ Production & AI Foundations | Weeks 5–8 | Docker · CI/CD · Python · LangChain |
+| 3️⃣ Integration & Portfolio | Weeks 9–12 | Symfony ↔ AI Bridge · Portfolio · Job Prep |
 
 ---
 
-## 📆 Phase 1 – Re-Entry & Skill Refresh (Weeks 1–4)
+### 📊 Progress
+```
+Phase 1 ████████████░░░░░░░░ 33%
+Phase 2 ░░░░░░░░░░░░░░░░░░░░ 0%
+Phase 3 ░░░░░░░░░░░░░░░░░░░░ 0%
+```
+*(Update weekly – replace blocks as you advance)*
 
-<details>
-<summary><b>Week 1 – Modern PHP 8.3 Syntax & Environment</b></summary>
+---
 
-**🎯 Goal:** Refresh PHP 8.3 features & set up tooling  
-**🔧 Focus:** enums · attributes · named args · readonly · match · Composer 2 · PHPStan  
-**🧠 Deliverable:** CLI “energy-credits calculator”  
-**📚 Resources:**
-- [php.watch/versions](https://php.watch/versions)  
+## 🗓️ Phase 1 – Re-Entry & Skill Refresh (Weeks 1–4)
+
+### Week 1 – Modern PHP 8.3 Syntax & Environment ✅
+🎯 Goal: Refresh PHP 8.3 features & tooling  
+🔧 Focus: enums · attributes · named args · readonly · match · Composer 2 · PHPStan  
+🧠 Deliverable: CLI “energy-credits calculator”  
+
+📚 Resources:  
+- [PHP 8 changes – php.watch](https://php.watch/versions)  
 - [PHPStan Docs](https://phpstan.org)
 
-- [ ] Install PHP 8.3 + Composer 2  
-- [ ] Build small CLI app  
-- [ ] Run static analysis with PHPStan  
-- [ ] Push to GitHub ✅  
-</details>
+Tasks:
+- [x] Install PHP 8.3 + Composer 2
+- [x] Build CLI demo
+- [x] Run static analysis
+- [x] Push to GitHub
 
-<details>
-<summary><b>Week 2 – Symfony Setup & Routing</b></summary>
+### Week 2 – Symfony Setup & Routing
+🎯 Goal: Build minimal REST API  
+🔧 Focus: routing · controllers · autowiring · DI  
+🧠 Deliverable: `/status` endpoint  
+📚 Resource: [Symfony Setup Guide](https://symfony.com/doc/current/setup.html)
 
-**🎯 Goal:** Build minimal REST API  
-**🔧 Focus:** routing · controllers · autowiring · DI  
-**🧠 Deliverable:** `/status` endpoint  
-**📚 Resources:** [Symfony Setup Guide](https://symfony.com/doc/current/setup.html)
+Tasks:
+- [ ] Install Symfony CLI
+- [ ] Create project energy-exchange-api
+- [ ] Add /status route
+- [ ] Test with curl
 
-- [ ] Install Symfony CLI  
-- [ ] Create new project `energy-exchange-api`  
-- [ ] Add `/status` GET route  
-- [ ] Test with `curl` ✅  
-</details>
+### Week 3 – Doctrine ORM & Entities
+🎯 Goal: Persist data to PostgreSQL/MySQL  
+🔧 Focus: migrations · relations · repositories  
+🧠 Deliverable: CRUD for EnergyStations & Transfers  
 
-<details>
-<summary><b>Week 3 – Doctrine ORM & Entities</b></summary>
-
-**🎯 Goal:** Persist data to PostgreSQL/MySQL  
-**🔧 Focus:** migrations · relations · repositories  
-**🧠 Deliverable:** CRUD for “EnergyStations” & “Transfers”  
-**📚 Resources:** SymfonyCasts Doctrine Series
-
-- [ ] Configure local Postgres  
-- [ ] Create entities + migrations  
-- [ ] Implement CRUD endpoints  
-- [ ] Seed sample data ✅  
-</details>
-
-<details>
-<summary><b>Week 4 – API Platform & Auth</b></summary>
-
-**🎯 Goal:** Expose REST + JWT Auth  
-**🔧 Focus:** serialization · DTOs · LexikJWT  
-**🧠 Deliverable:** “Remote Energy Exchange API v1”  
-**📚 Resources:** [API Platform Docs](https://api-platform.com/docs)
-
-- [ ] Install API Platform 3  
-- [ ] Configure JWT Auth  
-- [ ] Auto-generate OpenAPI docs ✅  
-</details>
+### Week 4 – API Platform & Auth
+🎯 Goal: Expose REST + JWT Auth  
+🔧 Focus: serialization · DTOs · LexikJWT  
+🧠 Deliverable: Remote Energy Exchange API v1  
 
 ---
 
-## ⚙️ Phase 2 – Production Practices & AI Foundations (Weeks 5–8)
+## ⚙️ Phase 2 – Production & AI Foundations (Weeks 5–8)
 
-<details>
-<summary><b>Week 5 – Testing & CI/CD</b></summary>
+### Week 5 – Testing & CI/CD
+🎯 Goal: Automate validation  
+🔧 Focus: PHPUnit 10 · Mockery · GitHub Actions  
+🧠 Deliverable: Test coverage for /transfers  
 
-**🎯 Goal:** Automate validation  
-**🔧 Focus:** PHPUnit 10 · Mockery · GitHub Actions  
-**🧠 Deliverable:** Test coverage for `/transfers`  
-**📚 Resources:** [PHPUnit.de](https://phpunit.de)
+### Week 6 – Dockerization & Deploy
+🎯 Goal: Containerize app  
+🔧 Focus: Docker Compose · Nginx · env vars  
+🧠 Deliverable: Deploy to Render/Railway  
 
-- [ ] Write unit & integration tests  
-- [ ] Add CI workflow ✅  
-</details>
+### Week 7 – Python Essentials for AI
+🎯 Goal: Refresh Python & OpenAI API  
+🔧 Focus: venv · requests · prompt API  
+🧠 Deliverable: CLI that calls OpenAI  
 
-<details>
-<summary><b>Week 6 – Dockerization & Deploy</b></summary>
-
-**🎯 Goal:** Containerize app  
-**🔧 Focus:** Docker Compose · Nginx · env vars  
-**🧠 Deliverable:** Deploy to Render/Railway  
-**📚 Resources:** [Docker Labs](https://dockerlabs.collabnix.com)
-
-- [ ] Write `Dockerfile` + `docker-compose.yml`  
-- [ ] Test locally  
-- [ ] Deploy demo ✅  
-</details>
-
-<details>
-<summary><b>Week 7 – Python Essentials for AI</b></summary>
-
-**🎯 Goal:** Refresh Python & OpenAI API  
-**🔧 Focus:** venv · requests · prompt API  
-**🧠 Deliverable:** CLI that calls OpenAI  
-**📚 Resources:** [OpenAI Quickstart](https://platform.openai.com/docs/quickstart)
-
-- [ ] Set up Python 3.12 venv  
-- [ ] Create simple text prompt script ✅  
-</details>
-
-<details>
-<summary><b>Week 8 – LangChain Basics</b></summary>
-
-**🎯 Goal:** Build first agent loop  
-**🔧 Focus:** chains · memory · tool calling  
-**🧠 Deliverable:** “Energy FAQ Bot”  
-**📚 Resources:** [LangChain Short Course](https://www.deeplearning.ai/short-courses/langchain-for-llm-app-development/)
-
-- [ ] Load sample corpus  
-- [ ] Implement chain with memory  
-- [ ] Answer energy-topic questions ✅  
-</details>
+### Week 8 – LangChain Basics
+🎯 Goal: Build first agent loop  
+🔧 Focus: chains · memory · tool calling  
+🧠 Deliverable: “Energy FAQ Bot”  
 
 ---
 
 ## 🚀 Phase 3 – Integration & Portfolio (Weeks 9–12)
 
-<details>
-<summary><b>Week 9 – Symfony ↔ Python Bridge</b></summary>
+### Week 9 – Symfony ↔ Python Bridge
+🎯 Goal: Connect AI bot to Symfony  
+🔧 Focus: HTTP client · queues · async requests  
+🧠 Deliverable: `/ai/query` endpoint calling LangChain agent  
 
-**🎯 Goal:** Connect AI bot to Symfony  
-**🔧 Focus:** HTTP client · queues · async  
-**🧠 Deliverable:** `/ai/query` endpoint ✅  
-</details>
+### Week 10 – Frontend & Docs
+🎯 Goal: Add simple UI + documentation  
+🔧 Focus: Swagger/OpenAPI · React/Vue basics  
+🧠 Deliverable: Demo dashboard + API docs  
 
-<details>
-<summary><b>Week 10 – Frontend & Docs</b></summary>
+### Week 11 – Portfolio & Resume
+🎯 Goal: Showcase work for employers  
+🔧 Focus: GitHub READMEs · LinkedIn refresh  
+🧠 Deliverable: Portfolio site + polished repos  
 
-**🎯 Goal:** Add simple dashboard  
-**🔧 Focus:** Swagger · React/Vue · UX  
-**🧠 Deliverable:** Demo dashboard ✅  
-</details>
-
-<details>
-<summary><b>Week 11 – Portfolio & Resume</b></summary>
-
-**🎯 Goal:** Showcase work  
-**🔧 Focus:** GitHub READMEs · LinkedIn refresh  
-**🧠 Deliverable:** Portfolio site ✅  
-</details>
-
-<details>
-<summary><b>Week 12 – Mock Interviews & Outreach</b></summary>
-
-**🎯 Goal:** Begin applying  
-**🔧 Focus:** backend architecture · storytelling  
-**🧠 Deliverable:** 5 applications sent ✅  
-</details>
+### Week 12 – Mock Interviews & Outreach
+🎯 Goal: Begin applying for remote roles  
+🔧 Focus: backend architecture · AI storytelling  
+🧠 Deliverable: 5 applications sent + interview prep notes  
 
 ---
 
 ## 🧰 Tooling Checklist
-- [ ] PHP 8.3 + Composer 2  
-- [ ] Symfony CLI 7.x  
-- [ ] PostgreSQL 15 + Redis  
-- [ ] Docker / Docker Compose  
-- [ ] GitHub Actions  
-- [ ] Python 3.12 + LangChain + OpenAI API  
-- [ ] Render / Vercel for deployments  
+- [x] PHP 8.3 + Composer 2
+- [x] Symfony CLI 7.x
+- [ ] PostgreSQL 15 + Redis
+- [ ] Docker / Docker Compose
+- [ ] GitHub Actions
+- [ ] Python 3.12 + LangChain + OpenAI API
+- [ ] Render / Vercel for deployments
 
 ---
 
-## 📈 Progress Notes
-| Week | Key Win | Challenge | Next Step |
-|------|----------|------------|-----------|
-| 1 | | | |
-| 2 | | | |
-| … | | | |
-
----
-
-### 🧱 Outcome by Day 90
+## 🧱 Outcome by Day 90
 ✅ Deployed Symfony API Platform Project  
 ✅ Working LangChain Agent linked via API  
 ✅ Two public GitHub repos + Portfolio site  
-✅ Ready resume with “Symfony 7 + AI Integration” focus  
+✅ Resume framed as “Symfony 7 + AI Integration Engineer”  
 
 ---
 
-*Keep pushing small commits weekly — consistency beats intensity.*
+⭐ **Commit weekly — Consistency > Intensity** ⭐
