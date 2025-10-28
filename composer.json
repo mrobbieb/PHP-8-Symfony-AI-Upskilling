@@ -1,0 +1,14 @@
+{
+    "name": "martin/php-8-symfony-ai-upskilling",
+    "description": "PHP-8 CLI Demo. Using solar power exchange as example.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "mrobbieb"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpstan/phpstan": "2.1.x-dev"
+    }
+}
